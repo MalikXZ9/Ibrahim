@@ -1,0 +1,49 @@
+//Vars
+
+/*fonts*/
+$px60: 3.75rem;
+$px50: 3.125rem;
+$px40: 2.5rem;
+$px30: 1.875rem;
+$px25: 1.5625rem;
+$px20: 1.25rem;
+$px18: 1.125rem;
+$px14: 0.875rem;
+
+/*colors*/
+$dark: #1a1a1a;
+$accent: #ffe137;
+$white: #f2ecff;
+$dark-l: #454545;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #1a1a1a;
+}
+
+.logo {
+  color: $accent;
+  font-weight: 700;
+  font-size: $px25;
+}
+
+.nav-link {
+  color: $white;
+  font-size: $px18;
+}
+
+.contact {
+  font-size: $px20;
+  color: $dark;
+  background-color: $accent;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 0.2em 1.5em;
+}
