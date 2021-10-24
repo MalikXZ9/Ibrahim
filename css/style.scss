@@ -31,11 +31,35 @@ body {
   color: $accent;
   font-weight: 700;
   font-size: $px25;
+  flex: 1;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .nav-link {
   color: $white;
   font-size: $px18;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-link::before {
+  content: '';
+  background-color: $accent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 10%;
+  border-radius: 20px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms ease-out;
+}
+
+.nav-link:hover::before {
+  transform: scaleX(1);
 }
 
 .contact {
@@ -46,4 +70,68 @@ body {
   border: none;
   border-radius: 10px;
   padding: 0.2em 1.5em;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+}
+
+.contact:hover {
+  outline: 2px solid $accent;
+  background-color: $dark;
+  color: $accent;
+}
+
+.nav {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: $px25;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  list-style: none;
+}
+
+/*Hero*/
+.main-content-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: $px40;
+}
+
+.section {
+  width: 70%;
+  margin: 0 auto;
+}
+.hero {
+  display: grid;
+  place-items: center;
+
+  img {
+    width: 20rem;
+    transition: transform 300ms ease-out;
+  }
+
+  img:hover {
+    transform: scale(1.03);
+  }
+}
+
+.hero-text-content {
+  width: 50%;
+  .hero-heading {
+    font-size: $px60;
+    color: $accent;
+    margin-bottom: 8rem;
+  }
+  .hero-text {
+    font-size: $px18;
+    color: $white;
+    width: 80%;
+  }
 }
