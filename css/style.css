@@ -141,7 +141,7 @@ body {
 }
 
 .hero-text-content {
-  width: 50%;
+  width: 60%;
 }
 
 .hero-text-content .hero-heading {
@@ -153,6 +153,5 @@ body {
 .hero-text-content .hero-text {
   font-size: 1.125rem;
   color: #f2ecff;
-  width: 80%;
 }
 /*# sourceMappingURL=style.css.map */
